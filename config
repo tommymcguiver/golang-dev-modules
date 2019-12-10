@@ -1,0 +1,17 @@
+{	
+	"go.addTags": {
+		"tags": "json",
+		"options": "",
+		"promptForTags": false,
+		"transform": "snakecase"
+	},
+	// "workbench.colorTheme": "Visual Studio Light",
+	"cSpell.language": "en-GB",
+	"go.lintTool": "golangci-lint",
+	"go.lintFlags": [
+		"--fast",
+	],
+	"go.generateTestsFlags": [
+		"-template=testify"
+	]
+}
