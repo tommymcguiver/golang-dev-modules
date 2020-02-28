@@ -1,11 +1,21 @@
 #!/bin/sh
+set -eu
 
 go mod download
 
-go install golang.org/x/tools/cmd/godoc
-go install github.com/ramya-rao-a/go-outline
-go install golang.org/x/tools/cmd/gopls
-go install github.com/cweill/gotests/...
-go install github.com/golangci/golangci-lint/cmd/golangci-lint
-go install mvdan.cc/sh/v3/cmd/shfmt
-go install github.com/inancgumus/godocc
+get() {
+	go get -u $1
+}
+
+
+install(){
+	go install $1
+}
+
+install golang.org/x/tools/cmd/godoc
+install github.com/ramya-rao-a/go-outline
+get github.com/cweill/gotests/...
+install github.com/cweill/gotests/...
+install github.com/golangci/golangci-lint/cmd/golangci-lint
+install mvdan.cc/sh/v3/cmd/shfmt
+install github.com/inancgumus/godocc
