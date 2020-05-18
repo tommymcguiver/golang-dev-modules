@@ -17,5 +17,7 @@ install github.com/ramya-rao-a/go-outline
 get github.com/cweill/gotests/...
 install github.com/cweill/gotests/...
 install github.com/golangci/golangci-lint/cmd/golangci-lint
-install mvdan.cc/sh/v3/cmd/shfmt
+GO111MODULE=on install mvdan.cc/sh/v3/cmd/shfmt
 install github.com/inancgumus/godocc
+install github.com/cosmtrek/air
+
