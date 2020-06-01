@@ -20,4 +20,6 @@ install github.com/golangci/golangci-lint/cmd/golangci-lint
 GO111MODULE=on install mvdan.cc/sh/v3/cmd/shfmt
 install github.com/inancgumus/godocc
 install github.com/cosmtrek/air
+get github.com/nathany/looper
+get github.com/kyoh86/richgo
 
